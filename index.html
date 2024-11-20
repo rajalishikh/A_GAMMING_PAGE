@@ -20,19 +20,21 @@
     >
       <!-- menu section -->
       <section
-        class="min-h-screen flex items-center justify-center Home_page hidden"
+      id="menu_section"
+
+        class="min-h-screen flex items-center justify-center Home_page "
       >
         <div class="flex flex-col items-center gap-2">
-          <h1 class="font_anton text-8xl">ALPHABET CLASH</h1>
+          <h1 class="font_anton text-8xl text-[#FFFFFF]">ALPHABET CLASH</h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="btn btn-outline bg-[#FFFFFF] text-[#010313]">
+          <button onclick="hidden_font_page()" class="btn btn-outline bg-[#FFFFFF] text-[#010313]">
             play Now
           </button>
         </div>
       </section>
 
       <!-- keyboard section start  -->
-      <section class="Gaming_page pt-9 hidden">
+      <section id="keyboard_section" class="Gaming_page pt-9 hidden">
         <div class="flex flex-col items-center gap-6">
           <!-- screen section  -->
 
@@ -54,7 +56,7 @@
           </div>
 
           <!-- keyboard section  -->
-          <div>
+          <div class="mt-10">
             <div class="my-1 flex w-full justify-center gap-1">
               <kbd class="kbd">q</kbd>
               <kbd class="kbd">w</kbd>
@@ -90,7 +92,7 @@
             </div>
           </div>
           <!-- button section -->
-          <div class="flex justify-between w-3/4">
+          <div class="flex  justify-between m-44 ">
             <div>
               <button class="btn bg-[#894189] text-white rounded">
                 life
@@ -112,8 +114,8 @@
 
       <!-- score page start  -->
 
-      <section class="score_page flex flex-col justify-center items-center  gap-3  min-h-screen">
-        <div class="text-center pb-5 p-4 bg-[#FFFFFF33] rounded">
+      <section class="hidden score_page flex flex-col justify-center items-center  gap-3  min-h-screen">
+        <div class=" text-center pb-5 p-4 bg-[#FFFFFF33] rounded">
           <h1 class="text-[#FFFFFF] text-8xl font-extrabold">
            <span>Score</span>  :
            <span>14</span> 
@@ -128,6 +130,7 @@
 
     </section>
     <!-- javaScript section  -->
+     <script src="./javaScript/utility.js"></script>
      <script src="./javaScript/first.js"></script>
   </body>
 </html>
