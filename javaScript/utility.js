@@ -7,6 +7,12 @@ function utility2(elementId2){
     let show_page=document.getElementById(elementId2)
     show_page.classList.remove('hidden')
 }
+// change the color 
+
+function change_color(element){
+    let color_change=document.getElementById(element)
+    color_change.classList.add('bg-orange-500')
+}
 
 function make_random_alphabet(){
     // create abcd

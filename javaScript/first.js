@@ -11,6 +11,12 @@
 function continue_game(){
     let x=make_random_alphabet()
     console.log(x)
+    // set attribute
+    let find_land=document.getElementById('output_y')
+    console.log(find_land)
+    find_land.innerText=x
+
+    change_color(x)
 }
 
 function hidden_font_page(){
