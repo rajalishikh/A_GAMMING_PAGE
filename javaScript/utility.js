@@ -20,6 +20,23 @@ function remove_color(element){
     color_change.classList.remove('bg-orange-500')
 }
 
+// find the scoring and life value 
+
+function increasing(elementId){
+
+    let findId=document.getElementById(elementId)
+    let findId_text=findId.innerText;
+    let find_id_int=parseInt(findId_text)
+    return find_id_int
+
+}
+// set the score and life value 
+function set_the_score(element,value){
+
+    let set_number=document.getElementById(element)
+    set_number.innerText=value
+}
+
 function make_random_alphabet(){
     // create abcd
     let alphabet='abcdefghijklmnopqrstuvwxyz'

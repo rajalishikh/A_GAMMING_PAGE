@@ -16,29 +16,47 @@ function find_latter_pressing_by_user(event){
 
     if(the_latter_pressing_by_user === result_find_random_latter){
         console.log('Congratulation you press the write button ')
-        // work for increasing score
-        let find_the_score=document.getElementById('total_score');
-        let find_the_value=find_the_score.innerText
+
+
+        let find_id=increasing('total_score')
+        const number_score=find_id+1;
+        set_the_score('total_score',number_score)
+
+        // ------------------------------------------------------
+
+        // // work for increasing score
+        // let find_the_score=document.getElementById('total_score');
+        // let find_the_value=find_the_score.innerText
         
-        let translate_score=parseInt(find_the_value)
-        console.log(translate_score)
-        // set the scoring
-        const set_score=translate_score+1;
-        console.log(set_score)
-        // set the number
-        find_the_score.innerText=set_score
+        // let translate_score=parseInt(find_the_value)
+        // console.log(translate_score)
+        // // set the scoring
+        // const set_score=translate_score+1;
+        // console.log(set_score)
+        // // set the number
+        // find_the_score.innerText=set_score
  
         remove_color(result_find_random_latter)
         continue_game()
     }else{
         console.log('Dhur vhiya ba apu press the right button')
+
+        let find_life=increasing('total_life');
+        const removing_life=find_life-1;
+        set_the_score('total_life',removing_life)
+
+
         // remove the life 
 
-        let find_life=document.getElementById('total_life')
-        let find_life_value=find_life.innerText;
-        let translate_find_life_value=parseInt(find_life_value);
-        const remove_life=translate_find_life_value-1;
-        find_life.innerText=remove_life
+
+
+        // ------------------------------------------------------
+
+        // let find_life=document.getElementById('total_life')
+        // let find_life_value=find_life.innerText;
+        // let translate_find_life_value=parseInt(find_life_value);
+        // const remove_life=translate_find_life_value-1;
+        // find_life.innerText=remove_life
     }
 
 }
