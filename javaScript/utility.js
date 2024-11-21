@@ -14,6 +14,12 @@ function change_color(element){
     color_change.classList.add('bg-orange-500')
 }
 
+// remove the color 
+function remove_color(element){
+    let color_change=document.getElementById(element)
+    color_change.classList.remove('bg-orange-500')
+}
+
 function make_random_alphabet(){
     // create abcd
     let alphabet='abcdefghijklmnopqrstuvwxyz'
