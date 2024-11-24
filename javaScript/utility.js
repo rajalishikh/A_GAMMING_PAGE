@@ -20,6 +20,13 @@ function remove_color(element){
     color_change.classList.remove('bg-orange-500')
 }
 
+// remove the text
+function remove_the_text(element){
+    let remove=document.getElementById(element)
+    let y=remove.innerText
+    return y
+}
+
 // find the scoring and life value 
 
 function increasing(elementId){

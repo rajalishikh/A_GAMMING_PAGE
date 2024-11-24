@@ -89,6 +89,19 @@ function hidden_font_page(){
 function hidden_gaming_field(){
     utility('keyboard_section')
     utility2('score_page')
+
+    // set the final score 
+
+    let find_last_score=document.getElementById('total_score').innerText
+    set_the_score('total_score_in_your_game',find_last_score)
+
+
+    // remove the previous text
+
+    let currentAlphabet=document.remove_the_text('output_y')
+    remove_color(currentAlphabet)
+
+   
     continue_game()
 
 }
@@ -102,5 +115,7 @@ function play_again(){
     // set the score
     set_the_score('total_life',5)
     set_the_score('total_score',0)
+
+    
 
 }
