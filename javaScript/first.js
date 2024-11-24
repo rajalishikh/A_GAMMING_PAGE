@@ -45,6 +45,11 @@ function find_latter_pressing_by_user(event){
         const removing_life=find_life-1;
         set_the_score('total_life',removing_life)
 
+        if(removing_life == 0){
+            hidden_gaming_field()
+
+        }
+
 
         // remove the life 
 
@@ -79,4 +84,23 @@ function hidden_font_page(){
     utility('menu_section')
     utility2('keyboard_section')
     continue_game()
+}
+
+function hidden_gaming_field(){
+    utility('keyboard_section')
+    utility2('score_page')
+    continue_game()
+
+}
+
+// play again section 
+
+function play_again(){
+    utility('score_page')
+    utility2("keyboard_section")
+
+    // set the score
+    set_the_score('total_life',5)
+    set_the_score('total_score',0)
+
 }

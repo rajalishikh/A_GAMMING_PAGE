@@ -116,13 +116,14 @@
 
       <!-- score page start  -->
 
-      <section class="hidden score_page flex flex-col justify-center items-center  gap-3  min-h-screen">
+      <section id="score_page" class="hidden score_page flex flex-col justify-center items-center  gap-3  min-h-screen">
         <div class=" text-center pb-5 p-4 bg-[#FFFFFF33] rounded">
+          <h3 class="text-3xl text-[#FFFFFF]">Game Over !</h3>
           <h1 class="text-[#FFFFFF] text-8xl font-extrabold">
            <span>Score</span>  :
            <span>14</span> 
           </h1>
-          <button  class="btn bg-[#FFFFFF] text-[#010313] ">Play Now</button>
+          <button onclick="play_again()"  class="btn bg-[#FFFFFF] text-[#010313] ">Play Again</button>
           <p class="font-medium text-[#FFFFFF]">Practice will make you Pro</p>
         </div>
 
